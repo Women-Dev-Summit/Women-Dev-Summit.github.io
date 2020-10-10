@@ -1,0 +1,141 @@
+header.bg-gray-dark {
+	padding: 15px;
+}
+
+.hero {
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero h1.h1 {
+	font-size: 1.5rem;
+}
+
+.Speaker-img {
+    width: 100px;
+    height: 100px
+}
+
+.Speaker-img img {
+    width: 90px;
+    height: 90px
+}
+
+@media (min-width: 768px) {
+    .Speaker-img {
+        width: 190px;
+        height: 190px
+    }
+
+    .Speaker-img img {
+        width: 170px;
+        height: 170px
+    }
+}
+
+.Speaker-img {
+    border: 3px solid #1b1f23
+}
+
+.Speaker:nth-child(4n+1) .Speaker-img {
+    border-color: #27B5AC
+}
+
+.Speaker:nth-child(4n+2) .Speaker-img {
+    border-color: #96E856
+}
+
+.Speaker:nth-child(4n+3) .Speaker-img {
+    border-color: #F4903D
+}
+
+.Speaker:nth-child(4n+4) .Speaker-img {
+    border-color: #BF009B
+}
+
+.Speaker details summary:hover .Speaker-img {
+    border-width: 3px;
+    border-color: #1b1f23 !important
+}
+
+.Speaker .details-dialog a:focus {
+    background-color: rgba(39, 181, 172, 0.3)
+}
+
+.Speaker .details-dialog:focus {
+    outline: none;
+    box-shadow: 0 0 0 6px rgba(39, 181, 172, 0.5)
+}
+
+.Speaker ul a:hover {
+    text-decoration: none;
+    color: #1e8b84 !important
+}
+
+@media only screen and (max-width: 544px) {
+    .Speaker .h2 {
+        font-size: 1.25rem !important
+    }
+}
+
+@media only screen and (max-width: 544px) {
+    .Speaker .f3 {
+        font-size: 0.925rem !important
+    }
+}
+
+.Speaker details-dialog {
+    position: fixed;
+    margin: 10vh auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    max-height: 80vh
+}
+
+.Schedule-Day h3.h2 {
+    font-size: 2.5rem !important
+}
+
+.Schedule-Events li:nth-of-type(odd) {
+    background-color: #effcfb
+}
+
+.Schedule-Events li:nth-of-type(even) {
+    background-color: #e2f9f7
+}
+
+span[class^="tz-content-"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden
+}
+
+@media (min-width: 768px) {
+    span[class^="tz-content-"] {
+        margin-top: -12px
+    }
+}
+
+.tz-pt .tz-content-pt {
+    visibility: visible
+}
+
+.tz-ct .tz-content-ct {
+    visibility: visible
+}
+
+.tz-et .tz-content-et {
+    visibility: visible
+}
+
+.tz-brt .tz-content-brt {
+    visibility: visible
+}
+
+.tz-cet .tz-content-cet {
+    visibility: visible
+}
