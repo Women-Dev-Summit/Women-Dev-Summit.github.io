@@ -1,0 +1,36 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    {% if page.title %}{{ page.title | escape }}
+    {% else %}{{ site.title | escape }}{% endif %}
+  </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 255 | escape }}">
+  <link rel="canonical" href="{{ site.url }}" />
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/en" />
+  <link rel="alternate" hreflang="es" href="{{ site.url }}/es" />
+  <link rel="alternate" hreflang="pt" href="{{ site.url }}/pt" />
+
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url"  content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:title" content="{{ page.title | escape }}" />
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 255 | escape }}" />
+  <meta property="og:site_name" content="WoMakersCode">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ site.ogg }}{{ page.ogg }}" />
+
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+  <meta name="twitter:title" content="{{ page.title | escape }}" />
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 255 | escape }}" />
+  <meta name="twitter:image" content="{{ site.ogg }}{{ page.ogg }}" />
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!--link href="https://octogatosconf.com/style.css" rel="stylesheet" /-->
+
+  <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+  <link rel="stylesheet" href="{{"/assets/css/style.css" | relative_url }}">
+
+  <script type="module" src="https://unpkg.com/@github/details-dialog-element@latest"></script>
+</head>
