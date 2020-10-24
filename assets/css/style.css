@@ -2,6 +2,12 @@ header.bg-gray-dark {
 	padding: 15px;
 }
 
+@media (min-width: 768px) {
+    header div.navbar {
+        align-items: flex-end;
+    }
+}
+
 .hero {
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
