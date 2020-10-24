@@ -9,7 +9,21 @@ header.bg-gray-dark {
 }
 
 .hero h1.h1 {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.hero img {
+    width: 450px;
+}
+
+@media (max-width: 450px) {
+    .hero {
+        max-width: 450px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
 }
 
 .Speaker-img {
